@@ -15,7 +15,7 @@ window.addEventListener('load', async () => {
                     <div>
                         <div class="title-wrapper">
                             <h3>
-                                <a href="/dish.html?id=${dish.id}" class="card-title">${ dish.name }</a>
+                                <a href="dish.html?id=${dish.id}" class="card-title">${ dish.name }</a>
                             </h3>
                             <span class="badge label-1">${ dish.label }</span>
                             <span class="span title-2">$${ dish.price }</span>
