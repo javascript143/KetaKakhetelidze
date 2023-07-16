@@ -1,0 +1,184 @@
+.has-before,
+.has-after {
+    position: relative;
+    z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+    content: "";
+    position: absolute;
+}
+
+.btn {
+    position: relative;
+    color: hwb(0 100% 0%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    max-width: max-content;
+    border: 2px solid hwb(0 100% 0%);
+    padding: 12px 45px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    background-color: hwb(0 100% 0%);
+    transition: hwb(0 100% 0%);
+    z-index: -1;
+}
+
+.btn .text {
+    transition: 250ms ease;
+}
+
+.btn .text-2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: max-content;
+    color: rgb(0, 0, 0);
+}
+
+.btn:is(:hover, :focus-visible)::before { bottom: -50%; } 
+.btn:is(:hover, :focus-visible) .text-1 { transform: translateY(-40px);}
+.btn:is(:hover, :focus-visible) .text-2 { 
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.btn-secondary::before { background-color: rgb(0, 0, 0);}
+  
+.btn-secondary .text-2 { color: white;}
+
+.label-2 { font-size: 1.2rem; }
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-top {
+    margin-block-end: 70px;
+}
+
+.footer-brand {
+    position: relative;
+    padding: 50px 40px;
+    background: rgb(0, 0, 0);
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+.footer-brand::before,
+.footer-brand::after {
+    top: 0;
+    width: 15px;
+    height: 100%;
+}
+
+.footer-brand::before {
+    left: 0;
+}
+
+.footer-brand::after {
+    right: 0;
+}
+
+.footer-brand .logo {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 40px;
+    color: white;
+}
+
+.footer-brand :is(.body-4 .label-1) {
+    color: hwb(0 100% 0%);
+    line-height: 1.5em;
+}
+
+.footer-brand .contact-link {
+    margin-block: 6px;
+    transition: 250ms ease;
+}
+
+.footer-brand .contact-link:is(:hover, :focus-visible) {
+    color: hwb(0 100% 0%);
+}
+
+.footer-brand .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-brand .icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-brand .icon-wrapper input {
+    color: white;
+    margin-left: 10px;
+}
+
+.title-1 {
+    font-size: calc(1.6rem + 1.2vw);
+    margin-bottom: 20px;
+}
+
+.subscribe-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px 80px;
+    text-align: center;
+    border-radius: 5px;
+    max-width: 500px;
+    z-index: 111;
+}
+
+.subscribe-popup h3 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.subscribe-popup p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.subscribe-popup button {
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: auto;
+}
+
+.subscribe-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 11;
+}

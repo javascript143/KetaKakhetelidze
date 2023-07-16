@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BONO</title>
+        <meta name="title" content="BONO-restaurant">
+        <meta name="description" content="michelline star restaurant named BONO">
+
+        <link rel="shortcut icon" href="favicon.ico" type="image/svg+xml">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/footer.css">
+
+        <link rel="preload" as="image" href="assets/images/hero-slider-1.jpg">
+
+        <link rel="preload" as="image" href="assets/images/hero-slider-2.jpg">
+
+        <link rel="preload" as="image" href="assets/images/hero-slider-3.jpg">
+    </head>
+
+    <body>
+        <div class="preload" data-preload>
+            <div class="circle"></div>
+            <p class="text">BONO</p>
+        </div>
+
+        <header class="header" data-header>
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.svg" width="160" height="50" alt="BONO">
+                </a>
+
+                <nav class="nav-main">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/menu.html">Menu</a></li>
+                        <li><a href="/about-us.html">About us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/signin.html">Sign in</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="navbar" data-navbar>
+                    <button class="close-btn" aria-label="close menu" data-nav-toggler></button>
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.svg" width="160" height="50" alt="BONO">
+                    </a>
+                    <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="/" class="navbar-link hover-underline active">
+                                <div class="separator"></div>
+                                <span class="span">Home</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="/menu.html" class="navbar-link hover-underline active">
+                                <div class="separator"></div>
+                                <span class="span">Menu</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="/about-us.html" class="navbar-link hover-underline active">
+                                <div class="separator"></div>
+                                <span class="span">about us</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="/contact.html" class="navbar-link hover-underline active">
+                                <div class="separator"></div>
+                                <span class="span">Contact</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-item nav-signin">
+                            <a href="/signin.html" class="navbar-link hover-underline active">
+                                <div class="separator"></div>
+                                <span class="span">Sign In</span>
+                            </a>
+                        </li>
+
+                        <li class="navbar-item nav-signout hidden">
+                            <a class="navbar-link hover-underline active">
+                                <p class="user-email"></p>
+                                <span class="span signout-btn">Log out</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <p class="headline-1 navbar-title">Visit Us</p>
+                        <adress class="body-4">
+                            Hotel de Russie, Via del Babuino,<br> 9, 00187 Roma RM, Italy
+                        </adress>
+                        <p class="body-4 navbar-text">Open: 8.00 am- 11.30pm </p>
+                        <a href="mailto:Booking@Bono.com"
+                        class="body-4 sidebar-link">Booking@Bono.com</a>
+                    <div class="separator"></div>
+                        <p class="contact-label">Booking Request</p>
+                        <a href="tel:+39 06 3288 8870" class="body-1 contact-number hover-underline"></a>
+                    </div>
+                </nav>
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="overlay" data-nav-toggler data-overlay></div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero text-center" aria-label="home" id="home">
+                <ul class="hero-slider" data-hero-slider>
+                    <li class="slider-item active" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">BONO</p>
+                        <h1 class="display-1 hero-title slider-reveal">3 star</h1>
+
+                        <p class="body-2 hero-text slider-reveal">
+                            Michelline star restaurant
+                        </p>
+                        <a href="menu.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View our menu</span>
+
+                            <span class="text text-2" aria-hidden="true">View our menu</span>
+                        </a>
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">BONO</p>
+
+                        <h1 class="display-1 hero-title slider-reveal">6 course</h1>
+
+                        <p class="body-2 hero-text slider-reveal">Michelline star restaurant</p>
+
+                        <a href="menu.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View our menu</span>
+                        </a>
+                    </li>
+
+                    <li class="slider-item" data-hero-slider-item>
+                        <div class="slider-bg">
+                            <img src="assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">    
+                        </div>
+                        <p class="label-2 section-subtitle slider-reveal">BONO</p>
+                        <h1 class="display-1 hero-title slider-reveal">Divine Experience</h1>              
+                        <p class="body-2 hero-text slider-reveal">Michelline star restaurant</p>
+                        <a href="menu.html" class="btn btn-primary slider-reveal">
+                            <span class="text text-1">View our menu</span>
+                        </a>                      
+                    </li>
+                </ul>
+
+                <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                    <ion-icon name="chevron-back"></ion-icon>
+                </button>
+
+                <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                    <ion-icon name="chevron-forward"></ion-icon>
+                </button>
+
+                <a href="#" class="hero-btn has-after pos-absolute">
+                    <img src="assets/images/booking.png" width="48" height="48" alt="booking icon">
+                    <span class="Label-2 text-center span">Book A Table</span>
+                </a>                     
+            </section>
+
+            <section class="section service bg-black-10 text-center" aria-label="service">
+                <div class="container">
+                    <p class="section-subtitle label-2">6 Course</p>
+
+                    <ul class="gris-list">
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/service-1.jpg" width="285" height="336"
+                                    loading="lazy" alt="breakfast"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">1 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">hors d'oeuvre</a>
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/soup.jpg" width="285" height="336"
+                                    loading="lazy" alt="dish"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">2 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">soup</a>
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/appetizer.jpg" width="285" height="336"
+                                    loading="lazy" alt="dish"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">3 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">appetizer</a>
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/salad1.jpg" width="285" height="336"
+                                    loading="lazy" alt="dish"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">4 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">salad</a>
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/main.jpg" width="285" height="336"
+                                    loading="lazy" alt="dish"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">5 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">main</a>
+
+                        <li class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                                    <img src="assets/images/dessert.jpg" width="285" height="336"
+                                    loading="lazy" alt="dish"
+                                    class="img-cover">
+                                </figure>
+                            </a>
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">6 course</a>
+                                </h3>
+                                <a href="#" class="btn-text hover-underline label-2">dessert</a>
+                            </div>
+                         </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="special-dish text-center" aria-labelledby="dish-label">
+                <div class="special-dish-banner">
+                    <img src="/assets/images/specialdish.jpg" width="940" height="900" loading="lazy" alt="special-dish" class="img-cover">
+                </div>
+
+                <div class="special-dish-content bg-black-10">
+                    <div class="container">
+                        <img src="assets/images/badge.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+                        <p class="section-subtitle Label-2">Special Dish</p>
+
+                        <h2 class="headline-1 section-title">Wagyu</h2>
+
+                        <p class="section-text">Japanese Marbled Cattle</p>
+
+                        <div class="wrapper">
+                            <span class="body-3">1</span>
+                            <span class="span body-1">Star</span>
+
+                            <a href="menu.html" class="btn btn-primary">
+                                <span class="text text-1">View All Menu</span>
+
+                                <span class="text text-2" aria-hidden="true">View Our Menu</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer section has-bg-image text-center">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand has-before has-after">
+                        <address class="body-4">
+                            Restaurant de Russie, Via del Babuino, 9, 00187 Roma RM
+                        </address>
+
+                        <a href="mailto:Booking@Bono.com" class="body-4 contact-link">Booking@Bono.com</a>
+
+                        <a href="tel:+39 06 3288 8870" class="body-4 contact-link">Booking Request: +39 06 3288 8870</a>
+                        <p class="body-4">
+                            Open : 10:00am - 11:30pm
+                        </p>
+
+                        <div class="wrapper">
+                            <div class="separator"></div>
+                            <div class="separator"></div>
+                            <div class="separator"></div>
+                        </div>
+
+                        <p class="title-1">Get news and offers</p>
+
+                        <form action="" class="input-wrapper subscribe-form">
+                            <div class="icon-wrapper">
+                                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                                <input type="email" name="email_adress" placeholder="Your Email" autocomplete="off" class="input-field">
+                            </div>
+                            <button type="submit" class="btn btn-secondary">
+                                <span class="text text-1">Subscribe</span>
+
+                                <span class="text text-2" aria-hidden="true">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="/" class="label-2 foooter-link hover-underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="/menu.html" class="label-2 foooter-link hover-underline">Menu</a>
+                        </li>
+                        <li>
+                            <a href="/about-us.html" class="label-2 foooter-link hover-underline">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html" class="label-2 foooter-link hover-underline">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="/signin.html" class="label-2 foooter-link hover-underline">Sign in</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        &copy; 2023 BONO All rights reserved |  Crafted by Keta
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="subscribe-popup hidden">
+            <h3>Thank You!</h3>
+            <p>Your details have been successfully submitted. Thanks!</p>
+    
+            <button class="subscribe-ok-btn">OK</button>
+        </div>
+    
+        <div class="subscribe-overlay hidden"></div>
+
+        <script src="assets/js/header.js"></script>
+        <script src="assets/js/footer.js"></script>
+        <script src="assets/js/script.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf) format(truetype);
+}
+
+:root {
+  font-family: Montserrat;
+  --smoky-black-2: hsla(30, 8%, 5%, 1);
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+
+  --fontSize-display-1: calc(1.3rem + 6.7vw);
+  --fontSize-title-4: calc(1.6rem + 1.2vw);
+  --fontSize-body-2: 1.6rem;
+  --fontSize-body-3: 1.8rem;
+  --fontSize-label-1: 1.4rem;
+
+  --weight-bold: 700;
+
+  --lineHeight-1: 1em;
+
+  --letterSpacing-2: 0.4em;
+  --letterSpacing-3: 0.2em;
+
+  --section-space: 70px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: 400;
+  line-height: 1.85em;
+  overflow: hidden;
+  height: 300vh;
+}
+
+body.loaded {
+  overflow: overlay;
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.display-1 {
+  font-size: var(--fontSize-display-1);
+  line-height: var(--lineHeight-1);
+}
+
+.title-4 {
+  font-size: var(--fontSize-title-4);
+}
+
+.body-1 {
+  font-size: 2.4rem;
+  line-height: 1.4em;
+}
+
+.body-2 {
+  font-size: var(--fontSize-body-2);
+  line-height: 1.6em;
+}
+
+.body-3 {
+  font-size: var(--fontSize-body-3);
+}
+
+.hober-underline {
+  position: relative;
+  max-width: max-content;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-subtitle {
+  position: relative;
+  color: hwb(0 100% 0%);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-2);
+  margin-block-end: 12px;
+} 
+
+.section-subtitle::after {
+  display: block;
+  width: 100px;
+  margin-inline: auto;
+  margin-block-start: 5px;
+}
+
+section {
+  position: relative;
+  padding-block: var(--section-space);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bg-black-10 { background-color: var(--smoky-black-2); }
+
+.hover\:shine { position: relative; }
+
+.hover\:shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, #fff6 100%);
+  transform: skewX(-0.08turn) translateX(-180%);
+}
+
+.hover\:shine:is(:hover, focus-within)::after {
+  transform: skewX(-0.08turn) translateX(275%);
+  transition: 1000ms ease;
+}
+
+.img-holder {
+  aspect-ratio: var(--width) \ var(--height);
+  overflow: hidden;
+}
+
+.btn-text {
+  color: hwb(0 100% 0%);
+  padding-block-end: 4px;
+  margin-inline: auto;
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+  font-weight: var(--weight-bold);
+  transition: 250ms ease;
+}
+
+.btn-text:is(:hover, :focus-visible) {color:white;}
+
+.shape {
+  display: none;
+  position: absolute;
+  max-width: max-content;
+  z-index: -1;
+}
+
+.w-100 {
+  width: 100%;
+} 
+
+.hero .slider-btn {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  padding-block: 120px;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index:1;
+}
+
+.hero .slider-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding-block-start: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1000ms ease;
+  z-index: 1;
+}
+
+.hero .slider-item.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hero .slider-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+.hero .slider-item.active .slider-bg {
+  animation: smoothScale 7s linear forwards;
+}
+
+@keyframes smoothScale {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15); }
+}
+
+.hero .section-subtitle::after {
+  margin-block: 14px 20px;
+}
+
+.hero-text {
+  margin-block: 10px 40px;
+}
+
+.hero .btn {
+  margin-inline: auto;
+}
+
+.hero-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  background-color: hwb(0 100% 0%);
+  width: 110px;
+  height: 110px;
+  padding: 12px;
+  transform: scale(0.6);
+}
+
+.hero-btn img {
+  margin-inline: auto;
+  margin-block-end: 6px;
+}
+
+.hero-btn::after {
+  inset: 0;
+  border: 1px solid hwb(0 100% 0%);
+  animation: rotate360 15s linear infinite;
+}
+
+.slider-reveal {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.hero .slider-item.active .slider-reveal {
+  animation: slideReveal 1s ease forwards;
+}
+
+@keyframes slideReveal {
+  0%{
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero .slider-item.active .section-subtitle {
+  animation-delay: 500ms;
+}
+
+.hero .slider-item.active .hero-title {
+  animation-delay: 500ms;
+}
+
+.hero .slider-item.active .hero-text {
+  animation-delay: 1.5s;
+}
+  
+.hero .slider-item.active .hero {
+  animation-delay: 2s;
+}
+
+.service .section-title {
+  margin-block-end: 16px;
+}
+
+.service .section-text {
+  margin-block-end: 40px;
+}
+
+.service-card { 
+  overflow: hidden;
+}
+
+.service-card .card-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card .card-banner img {
+  width: auto;
+  height: 400px;
+}
+
+.service-card .has-before {
+  padding-block: 30px;
+  margin-block-end: 26px;
+  z-index: 1;
+}
+
+.service-card .has-before::before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 100%;
+  transition: 500ms ease;
+  transition-delay: 0;
+  z-index: -1;
+  will-change: transform;
+}
+
+.service-card:is(:hover, :focus-within) .has-before::before {
+  transform: rotateY(0.5turn) translateX(50%);
+  transition-delay: 300ms;
+}
+
+.service-card card-banner {
+  transition: 500ms ease;
+}
+
+.service-card:is(:hover, :focus-within) .card-banner {
+  transform: scale(1.05);
+}
+
+.service .card-title {
+  margin-block-end: 12px;
+}
+
+.special-dish-content {
+  padding-block: 70px;
+}
+
+.special-dish .abs-img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.special-dish .section-text {
+  margin-block: 16px 40px;
+}
+
+.special-dish-content .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-block-end: 40px;
+}

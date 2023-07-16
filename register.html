@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sign In</title>
+  <link rel="stylesheet" href="assets/css/register.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="preload" data-preload>
+    <div class="circle"></div>
+    <p class="text">BONO</p>
+  </div>
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="assets/images/logo.svg" width="160" height="50" alt="BONO">
+      </a>
+
+      <nav class="nav-main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/menu.html">Menu</a></li>
+          <li><a href="/about-us.html">About us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/signin.html">Sign in</a></li>
+        </ul>
+      </nav>
+
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler></button>
+        <a href="#" class="logo">
+            <img src="assets/images/logo.svg" width="160" height="50" alt="BONO">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="/" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/menu" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/about-us" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">about us</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="/contact" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+          <li class="navbar-item nav-signin">
+            <a href="/signin.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Sign In</span>
+            </a>
+          </li>
+
+          <li class="navbar-item nav-signout hidden">
+            <a class="navbar-link hover-underline active">
+              <p class="user-email"></p>
+              <span class="span signout-btn">Log out</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+          <adress class="body-4">
+            Hotel de Russie, Via del Babuino,<br> 9, 00187 Roma RM, Italy
+          </adress>
+          <p class="body-4 navbar-text">Open: 8.00 am- 11.30pm </p>
+          <a href="mailto:Booking@Bono.com"
+          class="body-4 sidebar-link">Booking@Bono.com</a>
+        <div class="separator"></div>
+          <p class="contact-label">Booking Request</p>
+          <a href="tel:+39 06 3288 8870" class="body-1 contact-number hover-underline"></a>
+        </div>
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Register</h1>
+      <form action="" class="contact__form register-form" id="contact__form">
+        <div class="contact__form-div">
+          <input type="text" name="name" required class="contact__form-input" id="name">
+          <label class="contact__form-tag">Name</label>
+        </div>
+
+        <div class="contact__form-div">
+          <input type="email" name="email" required class="contact__form-input" id="email">
+          <label class="contact__form-tag">Email address</label>
+        </div>
+
+        <div class="contact__form-div">
+          <input type="password" name="password" required class="contact__form-input" id="password">
+          <label class="contact__form-tag">Password</label>
+        </div>
+
+        <div class="contact__form-div">
+          <input type="password" name="confirm_password" required class="contact__form-input" id="confirm-password">
+          <label class="contact__form-tag">Confirm password</label>
+        </div>
+        <button type="submit" class="contact__form-button">
+          Submit <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <div class="register-link">
+        <p>Already have an account?<a href="/signin.html" id="register">Sign in</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer section has-bg-image text-center">
+    <div class="container">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+          <address class="body-4">
+            Restaurant de Russie, Via del Babuino, 9, 00187 Roma RM
+          </address>
+
+          <a href="mailto:Booking@Bono.com" class="body-4 contact-link">Booking@Bono.com</a>
+
+          <a href="tel:+39 06 3288 8870" class="body-4 contact-link">Booking Request: +39 06 3288 8870</a>
+          <p class="body-4">
+            Open : 10:00am - 11:30pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p class="title-1">Get news and offers</p>
+
+          <form action="" class="input-wrapper subscribe-form">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+              <input type="email" name="email_adress" placeholder="Your Email" autocomplete="off" class="input-field">
+            </div>
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <a href="/" class="label-2 foooter-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="/menu.html" class="label-2 foooter-link hover-underline">Menu</a>
+          </li>
+          <li>
+            <a href="/about-us.html" class="label-2 foooter-link hover-underline">About Us</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="label-2 foooter-link hover-underline">Contact Us</a>
+          </li>
+          <li>
+            <a href="/signin.html" class="label-2 foooter-link hover-underline">Sign in</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2023 BONO All rights reserved |  Crafted by Keta
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="subscribe-popup hidden">
+    <h3>Thank You!</h3>
+    <p>Your details have been successfully submitted. Thanks!</p>
+
+    <button class="subscribe-ok-btn">OK</button>
+  </div>
+
+  <div class="subscribe-overlay hidden"></div>
+
+  <script src="assets/js/header.js"></script>
+  <script src="assets/js/footer.js"></script>
+  <script src="assets/js/register.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

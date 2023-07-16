@@ -1,0 +1,120 @@
+.menu {
+    padding-top: 250px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.menu .grid-list {
+    margin-block-end: 50px;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.menu .grid-list li:not(:last-child) {
+    margin-bottom: 100px;
+}
+
+.menu-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.menu-card h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.menu-card .span {
+    font-size: 22px;
+}
+
+.card-text {
+    font-style: italic;
+}
+
+.grid-list li:nth-child(even) .menu-card {
+    flex-direction: row-reverse;
+}
+
+.hover\:card .card-banner {
+    background-color: hwb(0 100% 0%);
+}
+
+.hover\:card .card-banner .menu-card__image {
+    transition: 500ms ease;
+}
+
+.hover\:card:is(:hover, :focus-within) .card-banner .menu-card__image {
+    opacity: 0.7;
+    transform: scale(1.05);
+}  
+
+.menu-card .card-title:is(:hover, :focus-visible) {
+    color: white;
+}
+
+.menu-card .badge {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    max-width: max-content;
+    line-height: 1.4em;
+    text-transform: uppercase;
+    padding-inline: 10px;
+    margin-block-start: 10px;
+}
+
+.menu-card .span {
+    color: hwb(0 100% 0%);
+    margin-block: 10px;
+}
+
+.menu-card .card-text {
+    color: hwb(0 100% 0%);
+    line-height: 1.6em;
+}
+
+.menu .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.menu .shape {
+    display: block;
+    width: 70%;
+}
+
+.menu-card__image {
+    width: 500px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.menu__search input {
+    width: 400px;
+    background-color: white;
+    font-size: 18px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-family: inherit;
+}
