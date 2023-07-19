@@ -199,7 +199,8 @@ header.hide {
   
 .nav-open-btn {
     padding: 12px;
-    padding-inline-end: 0;
+    background-color: black;
+    border-radius: 5px;
 }
   
 .nav-open-btn .line {

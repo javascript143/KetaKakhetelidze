@@ -5,24 +5,6 @@
 
 :root {
   font-family: Montserrat;
-  --smoky-black-2: hsla(30, 8%, 5%, 1);
-  --white: rgb(255, 255, 255);
-  --black: rgb(0, 0, 0);
-
-  --fontSize-display-1: calc(1.3rem + 6.7vw);
-  --fontSize-title-4: calc(1.6rem + 1.2vw);
-  --fontSize-body-2: 1.6rem;
-  --fontSize-body-3: 1.8rem;
-  --fontSize-label-1: 1.4rem;
-
-  --weight-bold: 700;
-
-  --lineHeight-1: 1em;
-
-  --letterSpacing-2: 0.4em;
-  --letterSpacing-3: 0.2em;
-
-  --section-space: 70px;
 }
 
 body {
@@ -55,12 +37,12 @@ body.nav-active {
 }
 
 .display-1 {
-  font-size: var(--fontSize-display-1);
-  line-height: var(--lineHeight-1);
+  font-size: calc(1.3rem + 6.7vw);
+  line-height: 1em;
 }
 
 .title-4 {
-  font-size: var(--fontSize-title-4);
+  font-size: calc(1.6rem + 1.2vw);
 }
 
 .body-1 {
@@ -69,17 +51,12 @@ body.nav-active {
 }
 
 .body-2 {
-  font-size: var(--fontSize-body-2);
+  font-size: 1.6rem;
   line-height: 1.6em;
 }
 
 .body-3 {
-  font-size: var(--fontSize-body-3);
-}
-
-.hober-underline {
-  position: relative;
-  max-width: max-content;
+  font-size: 1.8rem;
 }
 
 .img-cover {
@@ -91,11 +68,11 @@ body.nav-active {
 .section-subtitle {
   position: relative;
   color: hwb(0 100% 0%);
-  font-weight: var(--weight-bold);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: var(--letterSpacing-2);
+  letter-spacing: 0.4em;
   margin-block-end: 12px;
-} 
+}
 
 .section-subtitle::after {
   display: block;
@@ -106,12 +83,12 @@ body.nav-active {
 
 section {
   position: relative;
-  padding-block: var(--section-space);
+  padding-block: 70px;
   overflow: hidden;
   z-index: 1;
 }
 
-.bg-black-10 { background-color: var(--smoky-black-2); }
+.bg-black-10 { background-color: hsla(30, 8%, 5%, 1); }
 
 .hover\:shine { position: relative; }
 
@@ -141,23 +118,12 @@ section {
   padding-block-end: 4px;
   margin-inline: auto;
   text-transform: uppercase;
-  letter-spacing: var(--letterSpacing-3);
-  font-weight: var(--weight-bold);
+  letter-spacing: 0.2em;
+  font-weight: 700;
   transition: 250ms ease;
 }
 
 .btn-text:is(:hover, :focus-visible) {color:white;}
-
-.shape {
-  display: none;
-  position: absolute;
-  max-width: max-content;
-  z-index: -1;
-}
-
-.w-100 {
-  width: 100%;
-} 
 
 .hero .slider-btn {
   display: none;

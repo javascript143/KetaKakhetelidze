@@ -89,11 +89,6 @@ h1 {
     margin-block-start: 26px;
 }
 
-.menu .shape {
-    display: block;
-    width: 70%;
-}
-
 .menu-card__image {
     width: 500px;
     height: auto;

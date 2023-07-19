@@ -53,13 +53,15 @@ body {
     font-size: 1rem;
 }
 
-.contact__info,
 .contact__data,
 .contact__form {
     display: grid;
 }
 
 .contact__info {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
     row-gap: 2rem;
 }
 
