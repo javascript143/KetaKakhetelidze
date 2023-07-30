@@ -46,3 +46,10 @@ registerForm.addEventListener('submit', e => {
     }
   }
 });
+
+nameInput.addEventListener('input', e => {
+  const validCharacters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '.split('');
+  const value = e.target.value;
+
+  e.target.value = value.split('').map(letter => validCharacters.includes(letter) ? letter : '').join('');
+});
